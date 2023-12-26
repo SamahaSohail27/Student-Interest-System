@@ -1,0 +1,77 @@
+﻿
+
+<div class="container mt-3">
+    <!-- Add City Form -->
+    <div id="addCityFormContainer">
+        <h4 class="text-primary" >Add City</h4>
+        <form id="addCityForm">
+            <div class="mb-3">
+                <label for="cityName" class="form-label" class="text-primary-emphasis" >City Name</label>
+                <input type="text" class="form-control" id="cityName" required>
+            </div>
+            <div class="mb-3">
+                <label for="provinceDropdown" class="form-label" class="text-primary-emphasis">Province</label>
+                <select class="form-select" id="provinceDropdown" required>
+                    <!-- Populate this dropdown with the list of provinces -->
+                    <!-- Example: <option value="1">Province 1</option> -->
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary-emphasis">Add City</button>
+        </form>
+    </div>
+
+    <hr />
+
+    <!-- Add Province Form -->
+    <div id="addProvinceFormContainer">
+        <h4 class="text-primary" >Add Province</h4>
+        <form id="addProvinceForm">
+            <div class="mb-3">
+                <label for="provinceName" class="form-label text-primary-emphasis ">Province Name</label>
+                <input type="text" class="form-control" id="provinceName" required>
+            </div>
+            <button type="submit" class="btn btn-primary-emphasis">Add Province</button>
+        </form>
+    </div>
+
+    <hr />
+
+    <!-- Display City Table -->
+    <div id="cityTableContainer">
+        <h4 class="text-primary" >City List</h4>
+        <table class="table">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>City ID</th>
+                        <th>City Name</th>
+                        <th>Province Name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </table>
+    </div>
+
+    <hr />
+
+    <!-- Display Province Table -->z
+    <div id="provinceTableContainer">
+        <h4 class="text-primary">Province List</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Province ID</th>
+                    <th>Province Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+</div>

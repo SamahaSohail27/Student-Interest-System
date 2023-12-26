@@ -1,0 +1,68 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>Login Page</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="~/Scripts/Login.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .banner {
+            background-color: #240487;
+            color: #cabdbd;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner text-primary-emphasis ">
+        Student Management
+    </div>
+
+    <div class="container">
+        <div class="login-container">
+            <h2 class="mb-4 text-primary-emphasis ">Login</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email" class="text-primary-emphasis" >Email address:</label>
+                    <input type="email" class="form-control text-primary-emphasis " id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="text-primary-emphasis" >Password:</label>
+                    <input type="password" class="form-control text-primary-emphasis " id="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary-emphasis btn-block">Login</button>
+            </form>
+            <hr>
+            <p class="text-center text-primary-emphasis ">Don't have an account? <a href="https://localhost:44378/Register" class="btn btn-link text-primary-emphasis ">Register</a></p>
+
+        </div>
+    </div>
+
+   
+   
+</body>
+</html>
+

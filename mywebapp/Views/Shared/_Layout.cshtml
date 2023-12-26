@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap JavaScript library -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark" style="background-color: #A10C86;">
+        <div class="container">
+            @Html.ActionLink("Student Interest System", "Index", "Show", new { area = "" }, new { @class = "navbar-brand" })
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li>@Html.ActionLink("Add Students", "Index", "StudetnForm", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Student List", "Index", "Show", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Dashboard", "Index", "Chart", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #A10C86;">
+                            <ul class="navbar-nav">
+                                <li class="dropdown-item">
+                                    @Html.ActionLink("User", "Index", "ManageUser", new { area = "" }, new { @class = "nav-link text-white" })
+                                </li>
+                                <li class="dropdown-item">
+                                    @Html.ActionLink("Departs", "Index", "Other", new { area = "" }, new { @class = "nav-link text-white" })
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" onclick="navigateToCity(); return false;" class="text-white">City</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles.stform")
+    @RenderSection("scripts", required: false)
+    <script>
+        function getAdmin() {
+            $.ajax({
+                url: "/Show/getadmin",
+                type: "GET",
+                dataType: "json",
+                success: function (data) {
+                    var admin = data;
+
+                    // If 'admin' is true, show the "User" navbar option
+                    if (admin) {
+                        $("#ad").show();
+
+                    } else {
+                        // If 'admin' is false, hide the "User" navbar option
+                        $("#ad").hide();
+
+                    }
+                },
+                error: function () {
+                    console.error("Error fetching admin status from the server.");
+                }
+            });
+        }
+        function navigateToCity() {
+            // You can use window.location.href to navigate to the desired action
+            window.location.href = '/Management/Index'; // Adjust the URL as needed
+        }
+        // Call the function when the page loads
+        $(document).ready(function () {
+            getAdmin();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+﻿<div id="studentFormContainer" class="container mt-5" >
+    
+    <form id="studentForm">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="fullName" class="text-primary-emphasis" >Full Name</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="rollNumber" class="text-primary-emphasis" >Roll Number</label>
+                <input type="text" class="form-control" id="rollNumber" placeholder="Roll Number">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="email" class="text-primary-emphasis" >Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Email Address">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender">
+                    <option value=" "> </option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="dob" class="text-primary-emphasis" >Date of Birth</label>
+                <input type="date" class="form-control" id="dob">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="interest" class="text-primary font-weight-bold " >Interest</label>
+
+                <div class="input-group">
+                    <select class="form-control" id="interestDropdown" ">
+                        <option value=""></option>
+                        <option value="-1">Select an interest</option>
+                    </select>
+                    <input type="text" class="form-control" id="customInterest" style="display: none;" placeholder="Enter custom interest">
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="department" class="text-primary font-weight-bold " >Department</label>
+                <select class="form-control" id="department">
+                    <option value=" "> </option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="degree"  >Degree Title</label>
+                <select class="form-control" id="degree">
+                    <option value=" "> </option>
+                </select>
+            </div>
+
+        </div>
+        <div class="form-row">
+
+            <div class="form-group col-md-6">
+                <label for="city" class="text-primary-emphasis" >City</label>
+                <select class="form-control" id="city">
+                    <!-- Add city options here -->
+                    <option value=" "> </option>
+
+                </select>
+            </div>
+
+
+            <div class="form-group col-md-6">
+                <label for="subject" class="text-primary-emphasis" >Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Subject">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="startDate" class="text-primary-emphasis" >Start Date</label>
+                <input type="date" class="form-control" id="startDate">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="endDate" class="text-primary-emphasis" >End Date</label>
+                <input type="date" class="form-control" id="endDate">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary-emphasis" id="submitBtn">Create</button>
+            <button type="button" class="btn btn-primary-emphasis" id="updatebtn" style="display: none;">Update</button>
+
+            <button type="button" class="btn btn-secondary">Cancel</button>
+        </div>
+    </form>
+</div>
+

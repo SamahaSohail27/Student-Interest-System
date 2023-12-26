@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Management</title>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        /* Updated color scheme */
+        body {
+            background-color: #A10C86;
+            color: black; /* Change text color to black */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Add some basic styling for better presentation */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Apply the color scheme to form elements */
+        form {
+            background-color: #A10C86;
+            color: black; /* Change text color to black */
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #ffffff;
+            color: #A10C86;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Department Form -->
+    <form id="departmentForm">
+        <label for="departName">Department Name:</label>
+        <input type="text" id="departName" name="departName" required>
+
+        <label for="headOfDepartment">Head of Department:</label>
+        <input type="text" id="headOfDepartment" name="headOfDepartment" required>
+
+        <label for="officeLocation">Office Location:</label>
+        <input type="text" id="officeLocation" name="officeLocation" required>
+
+        <button type="button" id="addDepartmentBtn">Add Department</button>
+    </form>
+
+    <!-- Department Table -->
+    <table id="departmentTable">
+        <thead>
+            <tr>
+                <th>Department ID</th>
+                <th>Department Name</th>
+                <th>Head of Department</th>
+                <th>Office Location</th>
+            </tr>
+        </thead>
+        <tbody id="departmentTableBody">
+            <!-- Table rows will be added dynamically using JavaScript -->
+        </tbody>
+    </table>
+
+
+</body>
+</html>

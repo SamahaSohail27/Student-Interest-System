@@ -1,0 +1,174 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    @Html.Raw("<script src='https://code.jquery.com/jquery-3.5.1.slim.min.js'></script>")
+    @Html.Raw("<script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js'></script>")
+    @Html.Raw("<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script>")
+    <script src='https://cdn.jsdelivr.net/npm/chart.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@latest/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+
+    <style>
+        .chart-container {
+            position: relative;
+            width: 80vw;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Top 5 Interests -->
+            <div class="col-md-6">
+                <h5 class="mb-3 text-primary ">Top 5 Interests</h5>
+                <div class="border p-3" id="topInterestsContainer">
+
+                    <!-- Add your interest items here -->
+                    <div class="interest-item border-bottom mb-2 text-primary ">Interest 1</div>
+                    <div class="interest-item border-bottom mb-2 text-primary">Interest 2</div>
+                    <div class="interest-item border-bottom mb-2 text-primary">Interest 3</div>
+                    <div class="interest-item border-bottom mb-2 text-primary">Interest 4</div>
+                    <div class="interest-item mb-2 text-primary ">Interest 5</div>
+                </div>
+            </div>
+
+            <!-- Bottom 5 Interests -->
+
+            <div class="col-md-6">
+                <h5 class="mb-3 text-primary ">Bottom 5 Interests</h5>
+                <div class="border p-3 id=" id="bottomInterestsContainer">
+
+                    <!-- Add your interest items here -->
+                    <div class="interest-item border-bottom mb-2 text-primary ">Interest 6</div>
+                    <div class="interest-item border-bottom mb-2 text-primary">Interest 7</div>
+                    <div class="interest-item border-bottom mb-2 text-primary ">Interest 8</div>
+                    <div class="interest-item border-bottom mb-2 text-primary">Interest 9</div>
+                    <div class="interest-item mb-2 text-primary ">Interest 10</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Interest Square -->
+        <div class="text-center mt-4 border p-3">
+            <h4 class="text-primary-emphasis" >Total Interests</h4>
+            <div class="display-4 text-warning " id="total_interest">42</div>
+        </div>
+
+        <!-- Province Distribution Pie Chart -->
+        <div class="chart-container mt-4 ">
+            <canvas id="provinceChart"></canvas>
+        </div>
+
+        <!-- Submission Report Graph -->
+        <div class="chart-container mt-4">
+            <canvas id="submissionReportChart"></canvas>
+        </div>
+
+        <!-- Age Distribution Histogram -->
+        <div class="chart-container mt-4">
+            <canvas id="ageDistributionChart"></canvas>
+        </div>
+
+        <!-- Department Distribution Pie Chart -->
+        <div class="chart-container mt-4">
+            <canvas id="departmentDistributionChart"></canvas>
+        </div>
+
+        <!-- Degree Distribution Pie Chart -->
+        <div class="chart-container mt-4">
+            <canvas id="degreeDistributionChart"></canvas>
+        </div>
+
+
+
+
+        <!-- Student Status Table -->
+        <div class="mt-4">
+            <h5 class="text-danger" >Student Status</h5>
+            <table class="table" id="studentStatusTable">
+                <thead>
+                    <tr>
+                        <th>Study Status</th>
+                        <th>Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Gender Distribution Pie Chart -->
+        <div class="chart-container mt-4">
+            <canvas id="genderDistributionChart"></canvas>
+        </div>
+        <div class="chart-container mt-4">
+            <canvas id="last30days"></canvas>
+        </div>
+        <div class="chart-container mt-4">
+            <canvas id="last24hrs"></canvas>
+        </div>
+        <div class="table-container mt-4">
+            <h5 id="mostActiveHoursTable font-weight-bold ">Most Active Hours</h5>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Hour</th>
+                        <th>Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be added dynamically using jQuery -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container mt-4">
+            <h5 id="leastActiveHoursTable">Least Active Hours</h5>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Hour</th>
+                        <th>Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be added dynamically using jQuery -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="table-container mt-4">
+            <h5 id="deadHoursTable text-danger ">Dead Hours</h5>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Hour</th>
+                        <th>Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be added dynamically using jQuery -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    
+
+</body>
+</html>
+
+
