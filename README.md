@@ -59,5 +59,5 @@ The dashboard includes various widgets offering insights into student data:
 - **Backend:** C# ,  MVC architecture
 - **Database:** SQL.
 
-  ![Alt text](platform.jpg)
+  ![Alt text](platform.JPG)
 
