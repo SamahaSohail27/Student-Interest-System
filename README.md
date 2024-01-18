@@ -1,17 +1,15 @@
 # Student Interests System
 
-## Overview
-
 The Student Interests System is designed to manage student information, including their interests, and provide insightful analytics through a dashboard. The system comprises three primary screens - Add Student, Students List View, and Dashboard.
 
-#Entity Relationship Diagram
+# Entity Relationship Diagram
 
-![image](https://github.com/SamahaSohail27/Student-Interest-System/assets/141258951/49b661a6-01c5-4de7-bbd5-e51733171ad0)
+  ![Alt text](image.jpg)
 
 
 # Application Flow
 
-![Alt text](appflow.jpg)
+  ![Alt text](appflow.jpg)
 
 ## Screens
 
@@ -22,7 +20,7 @@ The Student Interests System is designed to manage student information, includin
 - Dropdown is populated dynamically from the database.
 - Users can add a new interest if not found in the dropdown.
 
-![Alt text](5.jpg)
+  ![Alt text](5.jpeg)
 
 ### Students List View
 
@@ -31,7 +29,7 @@ The Student Interests System is designed to manage student information, includin
 - Page navigator for easy navigation through the data.
 - Actions for viewing, editing, and deleting each student record.
 
-![Alt text](2.jpeg)
+  ![Alt text](2.jpeg)
 
 ### Dashboard
 
@@ -53,7 +51,7 @@ The dashboard includes various widgets offering insights into student data:
 
 # Usecase Diagram
 
-![Alt text](UseCaseDiagram.jpg)
+  ![Alt text](UseCaseDiagram.jpg)
 
 ## Technologies Used
 
@@ -61,4 +59,5 @@ The dashboard includes various widgets offering insights into student data:
 - **Backend:** C# ,  MVC architecture
 - **Database:** SQL.
 
+  ![Alt text](platform.jpg)
 
