@@ -6,7 +6,9 @@ The Student Interests System is designed to manage student information, includin
 
 # Application Flow
 
-![Alt text](appflow.jpg)
+![Alt text](7.jpg)
+
+![Alt text](8.jpg)
 
 ## Screens
 
@@ -26,6 +28,8 @@ The Student Interests System is designed to manage student information, includin
 
 ### Dashboard
 
+![Alt text](appflow.jpg)
+
 The dashboard includes various widgets offering insights into student data:
 
 - Top 5 and Bottom 5 Interests.
@@ -37,6 +41,8 @@ The dashboard includes various widgets offering insights into student data:
 - Last 30 days and last 24 hours activity line charts.
 - Students status grid showcasing current status counts.
 - Most, least, and dead hours activity lists.
+
+
 
 ## Technologies Used
 
