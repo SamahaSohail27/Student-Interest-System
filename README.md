@@ -5,7 +5,7 @@
 The Student Interests System is designed to manage student information, including their interests, and provide insightful analytics through a dashboard. The system comprises three primary screens - Add Student, Students List View, and Dashboard.
 
 ## Screens
-![Alt text]()
+![Alt text](appflow.jpg)
 
 ### Add Student Screen
 
