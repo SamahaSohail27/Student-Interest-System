@@ -22,7 +22,7 @@ The Student Interests System is designed to manage student information, includin
 - Dropdown is populated dynamically from the database.
 - Users can add a new interest if not found in the dropdown.
 
-  ![Alt text](5.jpg)
+![Alt text](5.jpg)
 
 ### Students List View
 
@@ -31,7 +31,7 @@ The Student Interests System is designed to manage student information, includin
 - Page navigator for easy navigation through the data.
 - Actions for viewing, editing, and deleting each student record.
 
-    ![Alt text](2.jpg)
+![Alt text](2.jpeg)
 
 ### Dashboard
 
