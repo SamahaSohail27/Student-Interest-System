@@ -11,9 +11,7 @@ The Student Interests System is designed to manage student information, includin
 
   ![Alt text](appflow.jpg)
 
-## Screens
-
-### Add Student Screen
+## Add Student Screen
 
 - Users can add new students with mandatory fields.
 - Special dropdown for entering student interests.
@@ -22,7 +20,7 @@ The Student Interests System is designed to manage student information, includin
 
   ![Alt text](5.jpeg)
 
-### Students List View
+## Students List View
 
 - Paginated display of student data with sorting options.
 - Page size dropdown to customize the number of rows displayed.
@@ -31,7 +29,7 @@ The Student Interests System is designed to manage student information, includin
 
   ![Alt text](2.jpeg)
 
-### Dashboard
+## Dashboard
 
 The dashboard includes various widgets offering insights into student data:
 
@@ -54,10 +52,6 @@ The dashboard includes various widgets offering insights into student data:
   ![Alt text](UseCaseDiagram.jpg)
 
 ## Technologies Used
-
-- **Frontend:** HTML, CSS, JavaScript.
-- **Backend:** C# ,  MVC architecture
-- **Database:** SQL.
 
   ![Alt text](platform.JPG)
 
